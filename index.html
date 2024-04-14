@@ -35,7 +35,7 @@
       class="hero w-100 h-100 p-3 text-center mx-auto d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
         <h1>Rifki & Calon</h1>
         <p>Akan Melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
@@ -166,6 +166,16 @@
               Alamat: Gedung Intan Balarea <br />Jl. Patriot No.12-14,
               Sukagalih, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat
             </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3958.360674365896!2d107.8864493!3d-7.1996261!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b0f3059e7c57%3A0xf23fcebaef634b68!2sGraha%20Intan%20Balarea!5e0!3m2!1sen!2sid!4v1713053588036!5m2!1sen!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <a
               href="https://goo.gl/maps/n3fS5k5Yd2tPT1Eq7"
               target="_blank"
@@ -417,7 +427,8 @@
         <form
           class="row row-cols-md-auto g-3 align-items-center justify-content-center"
           method="post"
-          action="https://script.google.com/macros/s/AKfycbzlVMpr1kQwb17EngWH9r7qNKaSF8cqGyftQtMNBnPBnSZvwtXLsUqomqw9olYCsK2U0Q/exec" id="my-form"
+          action="https://script.google.com/macros/s/AKfycbzlVMpr1kQwb17EngWH9r7qNKaSF8cqGyftQtMNBnPBnSZvwtXLsUqomqw9olYCsK2U0Q/exec"
+          id="my-form"
         >
           <div class="col-12">
             <div class="mb-3">
@@ -454,6 +465,37 @@
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://almunawar-wedding.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+          </div>
+        </div>
       </div>
     </section>
     <!-- Rsvp End -->
@@ -466,7 +508,8 @@
             <span>Ungkapan Tanda Kasih</span>
             <h2>Kirim Hadiah</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nesciunt architecto in?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nesciunt architecto in?
             </p>
           </div>
         </div>
@@ -485,7 +528,12 @@
             </li>
             <li class="list-group-item">
               <div class="fw-bold">Dana</div>
-              <img src="img/qr-code.jpg" alt="qr code" class="img-thumbnail" width="150">
+              <img
+                src="img/qr-code.jpg"
+                alt="qr code"
+                class="img-thumbnail"
+                width="150"
+              />
             </li>
           </ul>
         </div>
@@ -499,20 +547,44 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <small class="block">&copy; 2023 Almunawar Wedding. All Rights Reserved.</small>
-            <small class="block">Design by <a href="#">@rifkialmunawar17</a></small>
+            <small class="block"
+              >&copy; 2023 Almunawar Wedding. All Rights Reserved.</small
+            >
+            <small class="block"
+              >Design by <a href="#">@rifkialmunawar17</a></small
+            >
 
             <ul class="mt-3">
-              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- audio -->
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/audio.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+    <!-- audio end -->
 
     <!-- bootstarp -->
     <script
@@ -523,9 +595,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
       simplyCountdown(".simply-countdown", {
-        year: 2023, // required
-        month: 9, // required
-        day: 17, // required
+        year: 2024, // required
+        month: 4, // required
+        day: 20, // required
         hours: 0, // Default is 0 [0-23] integer
         minutes: 0, // Default is 0 [0-59] integer
         seconds: 0, // Default is 0 [0-59] integer
@@ -554,6 +626,10 @@
 
     <script>
       const rootElemet = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
 
       function disableScroll() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -569,12 +645,36 @@
       function enableScoll() {
         window.onscroll = function () {};
         rootElemet.style.scrollBehavior = "smooth";
-        localStorage.setItem("opened", "true");
+        // localStorage.setItem("opened", "true");
+        playAudio();
       }
 
-      if (!localStorage.getItem("opened")) {
-        disableScroll();
+      function playAudio() {
+        song.volume = 0.5;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
       }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-pause-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem("opened")) {
+      //   disableScroll();
+      // }
+
+      disableScroll();
     </script>
 
     <script>
@@ -592,6 +692,15 @@
           });
         });
       });
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+      document.querySelector("#nama").value = nama;
     </script>
   </body>
 </html>
